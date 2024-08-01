@@ -35,4 +35,12 @@ enum Rank {
     
     case king
     
+    func symbol() -> String {
+        "NOT IMPLEMENTED YET"
+    }
+    
+    func word() -> String {
+        "NOT IMPLEMENTED YET"
+    }
+    
 }
