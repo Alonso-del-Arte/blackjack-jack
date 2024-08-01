@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Rank {
+enum Rank : CaseIterable {
     
     case ace
     
