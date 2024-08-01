@@ -54,7 +54,21 @@ enum Rank : CaseIterable {
     }
     
     func word() -> String {
-        "NOT IMPLEMENTED YET"
+        switch (self) {
+        case .ace: "Ace"
+        case .two: "Two"
+        case .three: "Three"
+        case .four: "Four"
+        case .five: "Five"
+        case .six: "Six"
+        case .seven: "Seven"
+        case .eight: "Eight"
+        case .nine: "Nine"
+        case .ten: "Ten"
+        case .jack: "Jack"
+        case .queen: "Queen"
+        case .king: "Knight"
+        }
     }
     
 }
