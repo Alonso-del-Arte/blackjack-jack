@@ -30,4 +30,27 @@ final class RankTests: XCTestCase {
             XCTAssertEqual(expected, actual)
         }
     }
+    
+    func testWord() {
+        for rank in Rank.allCases {
+            let expected: String = switch (rank) {
+            case .ace: "Ace"
+            case .two: "Two"
+            case .three: "Three"
+            case .four: "Four"
+            case .five: "Five"
+            case .six: "Six"
+            case .seven: "Seven"
+            case .eight: "Eight"
+            case .nine: "Nine"
+            case .ten: "Ten"
+            case .jack: "Jack"
+            case .queen: "Queen"
+            case .king: "Knight"
+            }
+            let actual: String = rank.word()
+            XCTAssertEqual(expected, actual)
+        }
+    }
+    
 }
