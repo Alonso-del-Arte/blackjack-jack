@@ -17,9 +17,13 @@ enum Suit : Character, CaseIterable {
     
     case hearts = "\u{2665}\u{fe0f}"
     
-    // TODO: Write test for this
     func word() -> String {
-        "SORRY, NOT IMPLEMENTED YET"
+        switch (self) {
+        case .spades: "Spades"
+        case .diamonds: "Diamonds"
+        case .clubs: "Clubs"
+        case .hearts: "Hearts"
+        }
     }
     
 }
