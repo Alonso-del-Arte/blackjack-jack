@@ -7,14 +7,20 @@
 
 import Foundation
 
-enum Suit {
+enum Suit : Character, CaseIterable {
     
-    case spades
+    // TODO: Write test for these
+    case spades = "?"
     
-    case diamonds
+    case diamonds = "X"
     
-    case clubs
+    case clubs = "Y"
     
-    case hearts
+    case hearts = "Z"
+    
+    // TODO: Write test for this
+    func word() -> String {
+        "SORRY, NOT IMPLEMENTED YET"
+    }
     
 }
