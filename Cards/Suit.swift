@@ -9,14 +9,13 @@ import Foundation
 
 enum Suit : Character, CaseIterable {
     
-    // TODO: Write test for these
-    case spades = "?"
+    case spades = "\u{2660}\u{fe0f}"
     
-    case diamonds = "X"
+    case diamonds = "\u{2666}\u{fe0f}"
     
-    case clubs = "Y"
+    case clubs = "\u{2663}\u{fe0f}"
     
-    case hearts = "Z"
+    case hearts = "\u{2665}\u{fe0f}"
     
     // TODO: Write test for this
     func word() -> String {
